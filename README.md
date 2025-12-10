@@ -129,13 +129,6 @@ public List<Country> GetCountriesSortedByName()
 2. Сортируем по полю `Name` (по алфавиту)
 3. Преобразуем в список
 
-**LINQ-выражение (альтернативно):**
-```csharp
-from country in _context.Countries
-orderby country.Name
-select country
-```
-
 ---
 
 ### 4.2 Запрос к двум таблицам: `GetClubsWithCountryNames()`
@@ -361,66 +354,13 @@ public static void ShowMainMenu()
 ```
 
 ### Выполнение запроса
-```
-=== LINQ ЗАПРОСЫ ===
-1. Страны по алфавиту (1 таблица)
-2. Клубы с названиями стран (2 таблицы)
-3. Страна с наибольшим количеством золотых медалей (3 таблицы, одно значение)
-4. Клубы с золотыми медалями, но без кубков (3 таблицы, перечень)
-5. Пример из задания: ID страны клуба-чемпиона без кубков
-0. Назад
-
-Выберите запрос: 3
-
-=== СТРАНА С НАИБОЛЬШИМ КОЛИЧЕСТВОМ ЗОЛОТЫХ МЕДАЛЕЙ ===
-Выполнение запроса: Страна с наибольшим количеством золотых медалей
---------------------------------------------------
-Италия: 342 золотых медалей
-```
-
-### Просмотр данных
-```
-=== ПРОСМОТР ВСЕХ ДАННЫХ ===
-
-=== СТРАНЫ ===
-1: Австрия
-2: Азербайджан
-3: Албания
-... и ещё 52 стран
-
-=== КЛУБЫ ===
-1: Аустрия (Вена) (Country: 1)
-2: Ред Булл (Зальцбург) (Country: 1)
-3: Штурм (Грац) (Country: 1)
-... и ещё 207 клубов
-
-=== ДОСТИЖЕНИЯ ===
-Club 1: Gold=10, Silver=5, Bronze=3, Cups=2
-Club 2: Gold=8, Silver=4, Bronze=2, Cups=1
-... и ещё 848 достижений
-```
-
-### Управление данными (CRUD)
-```
-=== УПРАВЛЕНИЕ ДАННЫМИ ===
-1. Добавить страну
-2. Добавить клуб
-3. Добавить достижение
-4. Удалить страну
-5. Удалить клуб
-6. Удалить достижение
-7. Найти страну по ID
-8. Найти клуб по ID
-9. Найти достижение по ID
-0. Назад
-
-Выберите пункт: 1
-=== ДОБАВЛЕНИЕ НОВОЙ СТРАНЫ ===
-Введите ID страны: 999
-Введите название страны: Тестовая страна
-
-Добавлена страна: 999: Тестовая страна
-```
+<img width="1096" height="284" alt="image" src="https://github.com/user-attachments/assets/5c5a5105-0d34-434d-94b1-08a187f6d5e5" />
+<img width="1353" height="426" alt="image" src="https://github.com/user-attachments/assets/9c774f7e-e768-4dd1-82e3-3f78647fdcbc" />
+<img width="422" height="450" alt="image" src="https://github.com/user-attachments/assets/f2b00150-81af-43a4-9888-b25e89d658a9" />
+<img width="621" height="690" alt="image" src="https://github.com/user-attachments/assets/c2e03f1c-1934-427e-838b-69c13250db83" />
+<img width="617" height="253" alt="image" src="https://github.com/user-attachments/assets/46411dd3-8f65-46f8-bd01-8ea81d511354" />
+<img width="622" height="881" alt="image" src="https://github.com/user-attachments/assets/01be5e8c-c2f6-40b5-b74b-29b41a15b5f7" />
+<img width="629" height="274" alt="image" src="https://github.com/user-attachments/assets/56bc9b49-d460-4325-94b7-b681a31f28c9" />
 
 ---
 

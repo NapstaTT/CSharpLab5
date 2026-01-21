@@ -7,7 +7,7 @@ namespace lab5.Data.Models
         public int G { get; set; }
         public int S { get; set; }
         public int B { get; set; }
-        public int C { get; set; } 
+        public int C { get; set; }
         public int FC { get; set; }
         public int LC { get; set; }
         public int FLC { get; set; }
@@ -17,6 +17,18 @@ namespace lab5.Data.Models
         public int FCOC { get; set; }
         public int LK { get; set; }
         public int FLK { get; set; }
+        
+        public Achievement() { }
+        
+        public Achievement(int id, int clubId, int gold = 0, int silver = 0, int bronze = 0, int cups = 0)
+        {
+            Id = id;
+            ClubId = clubId;
+            G = gold;
+            S = silver;
+            B = bronze;
+            C = cups;
+        }
         
         public override string ToString() => $"Club {ClubId}: Gold={G}, Silver={S}, Bronze={B}, Cups={C}, Lost Final Cups={FC}, League of Champions={LC}, Final of League of Champions={FLC}, League of Europe={LE},\n Final Of League of Europe={FLE}, Cup of Cup Owners={COC}, Final of Cup Of Cup Owners={FCOC}, League of Confiderations={LK}, Finale of League of Confiderations={FLK}";
     }

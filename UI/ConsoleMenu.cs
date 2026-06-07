@@ -1,9 +1,22 @@
+///FIXME:
+/// - Приведены скобки к стилю Allman
+/// - Добавлена XML-документация
+/// - Упорядочены методы
+/// - Удалены лишние пустые строки
+/// - Улучшена читаемость меню
+
 using System;
 
 namespace lab5.UI
 {
+    /// <summary>
+    /// Отображает различные меню консольного интерфейса.
+    /// </summary>
     public static class ConsoleMenu
     {
+        /// <summary>
+        /// Отображает главное меню программы.
+        /// </summary>
         public static void ShowMainMenu()
         {
             Console.Clear();
@@ -17,7 +30,10 @@ namespace lab5.UI
             Console.WriteLine("0. Выход");
             Console.Write("\nВыберите пункт: ");
         }
-        
+
+        /// <summary>
+        /// Отображает меню CRUD-операций.
+        /// </summary>
         public static void ShowCrudMenu()
         {
             Console.Clear();
@@ -34,20 +50,26 @@ namespace lab5.UI
             Console.WriteLine("0. Назад");
             Console.Write("\nВыберите пункт: ");
         }
-        
+
+        /// <summary>
+        /// Отображает меню выбора LINQ-запросов.
+        /// </summary>
         public static void ShowQueriesMenu()
         {
             Console.Clear();
             Console.WriteLine("=== LINQ ЗАПРОСЫ ===");
             Console.WriteLine("1. Страны по алфавиту (1 таблица)");
             Console.WriteLine("2. Клубы с названиями стран (2 таблицы)");
-            Console.WriteLine("3. Страна с наибольшим количеством золотых медалей (3 таблицы, одно значение)");
-            Console.WriteLine("4. Клубы с золотыми медалями, но без кубков (3 таблицы, перечень)");
+            Console.WriteLine("3. Страна с наибольшим количеством золотых медалей");
+            Console.WriteLine("4. Клубы с золотыми медалями, но без кубков");
             Console.WriteLine("5. Пример из задания: ID страны клуба-чемпиона без кубков");
             Console.WriteLine("0. Назад");
             Console.Write("\nВыберите запрос: ");
         }
-        
+
+        /// <summary>
+        /// Отображает меню сохранения данных.
+        /// </summary>
         public static void ShowSaveMenu()
         {
             Console.Clear();
